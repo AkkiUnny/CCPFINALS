@@ -36,6 +36,7 @@
             button1 = new Button();
             label1 = new Label();
             button2 = new Button();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -108,11 +109,21 @@
             button2.Text = "Faculty";
             button2.UseVisualStyleBackColor = true;
             // 
+            // button3
+            // 
+            button3.Location = new Point(12, 387);
+            button3.Name = "button3";
+            button3.Size = new Size(94, 29);
+            button3.TabIndex = 17;
+            button3.Text = "Return";
+            button3.UseVisualStyleBackColor = true;
+            // 
             // AdminRegis
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(490, 428);
+            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(pictureBox1);
             Controls.Add(textBox3);
@@ -138,5 +149,6 @@
         private Button button1;
         private Label label1;
         private Button button2;
+        private Button button3;
     }
 }

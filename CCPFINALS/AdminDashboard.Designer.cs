@@ -35,6 +35,8 @@
             button2 = new Button();
             button1 = new Button();
             label1 = new Label();
+            button4 = new Button();
+            button5 = new Button();
             SuspendLayout();
             // 
             // button3
@@ -49,7 +51,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(391, 94);
+            label3.Location = new Point(262, 110);
             label3.Name = "label3";
             label3.Size = new Size(95, 20);
             label3.TabIndex = 16;
@@ -58,7 +60,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(311, 94);
+            label2.Location = new Point(182, 110);
             label2.Name = "label2";
             label2.Size = new Size(74, 20);
             label2.TabIndex = 15;
@@ -66,7 +68,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(293, 207);
+            button2.Location = new Point(285, 283);
             button2.Name = "button2";
             button2.Size = new Size(207, 34);
             button2.TabIndex = 14;
@@ -75,9 +77,9 @@
             // 
             // button1
             // 
-            button1.Location = new Point(311, 150);
+            button1.Location = new Point(285, 193);
             button1.Name = "button1";
-            button1.Size = new Size(175, 34);
+            button1.Size = new Size(207, 34);
             button1.TabIndex = 13;
             button1.Text = "View Student Scores";
             button1.UseVisualStyleBackColor = true;
@@ -86,17 +88,37 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(245, 48);
+            label1.Location = new Point(116, 64);
             label1.Name = "label1";
-            label1.Size = new Size(315, 46);
+            label1.Size = new Size(309, 46);
             label1.TabIndex = 12;
-            label1.Text = "Faculty Dashboard";
+            label1.Text = "Admin Dashboard";
+            // 
+            // button4
+            // 
+            button4.Location = new Point(36, 193);
+            button4.Name = "button4";
+            button4.Size = new Size(207, 34);
+            button4.TabIndex = 18;
+            button4.Text = "Account Management";
+            button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(36, 283);
+            button5.Name = "button5";
+            button5.Size = new Size(207, 34);
+            button5.TabIndex = 19;
+            button5.Text = "Question Bank Editor";
+            button5.UseVisualStyleBackColor = true;
             // 
             // AdminDashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(540, 450);
+            Controls.Add(button5);
+            Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -118,5 +140,7 @@
         private Button button2;
         private Button button1;
         private Label label1;
+        private Button button4;
+        private Button button5;
     }
 }

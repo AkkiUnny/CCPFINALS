@@ -50,20 +50,20 @@
             // 
             // button1
             // 
-            button1.Location = new Point(125, 121);
+            button1.Location = new Point(85, 121);
             button1.Name = "button1";
-            button1.Size = new Size(94, 34);
+            button1.Size = new Size(175, 34);
             button1.TabIndex = 1;
-            button1.Text = "Exam";
+            button1.Text = "Take Exam";
             button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            button2.Location = new Point(125, 169);
+            button2.Location = new Point(85, 169);
             button2.Name = "button2";
-            button2.Size = new Size(94, 34);
+            button2.Size = new Size(175, 34);
             button2.TabIndex = 2;
-            button2.Text = "Scores";
+            button2.Text = "View Scores";
             button2.UseVisualStyleBackColor = true;
             // 
             // label2
@@ -115,8 +115,10 @@
             Controls.Add(button1);
             Controls.Add(label1);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximumSize = new Size(369, 372);
+            MinimumSize = new Size(369, 372);
             Name = "Form2";
-            Text = "Rhodes Canvas";
+            Text = "Rhodes Canvas - Welcome!";
             ResumeLayout(false);
             PerformLayout();
         }
