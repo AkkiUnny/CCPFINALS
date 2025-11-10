@@ -1,6 +1,6 @@
 ﻿namespace CCPFINALS
 {
-    partial class _3FacultyScores
+    partial class FacultyScores
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_3FacultyScores));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FacultyScores));
             dataGridView1 = new DataGridView();
             button3 = new Button();
             comboBox1 = new ComboBox();
@@ -93,7 +93,7 @@
             label3.TabIndex = 30;
             label3.Text = "Student's score, out of 10:";
             // 
-            // _3FacultyScores
+            // FacultyScores
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -105,7 +105,7 @@
             Controls.Add(dataGridView1);
             Controls.Add(button3);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "_3FacultyScores";
+            Name = "FacultyScores";
             Text = "Faculty - Student Scores";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

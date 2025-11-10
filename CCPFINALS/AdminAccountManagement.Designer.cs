@@ -29,106 +29,183 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminAccountManagement));
-            button8 = new Button();
-            button7 = new Button();
-            button6 = new Button();
-            button2 = new Button();
+            btnDelete = new Button();
+            btnAdd = new Button();
+            txtEmail = new TextBox();
+            cmbRole = new ComboBox();
+            txtFullname = new TextBox();
+            txtPassword = new TextBox();
+            txtUsername = new TextBox();
+            lblEmail = new Label();
+            lblRole = new Label();
+            lblFullname = new Label();
+            lblPassword = new Label();
+            lblUsername = new Label();
+            dgvUsers = new DataGridView();
             button1 = new Button();
-            dataGridView1 = new DataGridView();
-            button3 = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvUsers).BeginInit();
             SuspendLayout();
             // 
-            // button8
+            // btnDelete
             // 
-            button8.Location = new Point(380, 397);
-            button8.Name = "button8";
-            button8.Size = new Size(94, 29);
-            button8.TabIndex = 35;
-            button8.Text = "Add";
-            button8.UseVisualStyleBackColor = true;
+            btnDelete.Location = new Point(493, 116);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(120, 35);
+            btnDelete.TabIndex = 12;
+            btnDelete.Text = "Delete User";
+            btnDelete.Click += btnDelete_Click;
             // 
-            // button7
+            // btnAdd
             // 
-            button7.Location = new Point(480, 397);
-            button7.Name = "button7";
-            button7.Size = new Size(94, 29);
-            button7.TabIndex = 34;
-            button7.Text = "Edit";
-            button7.UseVisualStyleBackColor = true;
+            btnAdd.Location = new Point(353, 116);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(120, 35);
+            btnAdd.TabIndex = 14;
+            btnAdd.Text = "Add User";
+            btnAdd.Click += btnAdd_Click;
             // 
-            // button6
+            // txtEmail
             // 
-            button6.Location = new Point(580, 397);
-            button6.Name = "button6";
-            button6.Size = new Size(94, 29);
-            button6.TabIndex = 33;
-            button6.Text = "Delete";
-            button6.UseVisualStyleBackColor = true;
+            txtEmail.Location = new Point(433, 78);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(180, 27);
+            txtEmail.TabIndex = 15;
             // 
-            // button2
+            // cmbRole
             // 
-            button2.Location = new Point(12, 71);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 30;
-            button2.Text = "Faculty";
-            button2.UseVisualStyleBackColor = true;
+            cmbRole.Items.AddRange(new object[] { "Admin", "Faculty", "Student" });
+            cmbRole.Location = new Point(433, 43);
+            cmbRole.Name = "cmbRole";
+            cmbRole.Size = new Size(180, 28);
+            cmbRole.TabIndex = 16;
+            // 
+            // txtFullname
+            // 
+            txtFullname.Location = new Point(153, 113);
+            txtFullname.Name = "txtFullname";
+            txtFullname.Size = new Size(160, 27);
+            txtFullname.TabIndex = 17;
+            // 
+            // txtPassword
+            // 
+            txtPassword.Location = new Point(153, 78);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(160, 27);
+            txtPassword.TabIndex = 18;
+            // 
+            // txtUsername
+            // 
+            txtUsername.Location = new Point(153, 43);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(160, 27);
+            txtUsername.TabIndex = 19;
+            // 
+            // lblEmail
+            // 
+            lblEmail.AutoSize = true;
+            lblEmail.Location = new Point(353, 81);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(49, 20);
+            lblEmail.TabIndex = 20;
+            lblEmail.Text = "Email:";
+            // 
+            // lblRole
+            // 
+            lblRole.AutoSize = true;
+            lblRole.Location = new Point(353, 46);
+            lblRole.Name = "lblRole";
+            lblRole.Size = new Size(42, 20);
+            lblRole.TabIndex = 21;
+            lblRole.Text = "Role:";
+            // 
+            // lblFullname
+            // 
+            lblFullname.AutoSize = true;
+            lblFullname.Location = new Point(58, 116);
+            lblFullname.Name = "lblFullname";
+            lblFullname.Size = new Size(79, 20);
+            lblFullname.TabIndex = 22;
+            lblFullname.Text = "Full Name:";
+            // 
+            // lblPassword
+            // 
+            lblPassword.AutoSize = true;
+            lblPassword.Location = new Point(58, 81);
+            lblPassword.Name = "lblPassword";
+            lblPassword.Size = new Size(73, 20);
+            lblPassword.TabIndex = 23;
+            lblPassword.Text = "Password:";
+            // 
+            // lblUsername
+            // 
+            lblUsername.AutoSize = true;
+            lblUsername.Location = new Point(58, 46);
+            lblUsername.Name = "lblUsername";
+            lblUsername.Size = new Size(78, 20);
+            lblUsername.TabIndex = 24;
+            lblUsername.Text = "Username:";
+            // 
+            // dgvUsers
+            // 
+            dgvUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvUsers.Location = new Point(23, 181);
+            dgvUsers.Name = "dgvUsers";
+            dgvUsers.RowHeadersWidth = 51;
+            dgvUsers.Size = new Size(640, 250);
+            dgvUsers.TabIndex = 13;
             // 
             // button1
             // 
-            button1.Location = new Point(12, 36);
+            button1.Location = new Point(11, 460);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 29;
-            button1.Text = "Student";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(117, 12);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(557, 379);
-            dataGridView1.TabIndex = 28;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(17, 409);
-            button3.Name = "button3";
-            button3.Size = new Size(94, 29);
-            button3.TabIndex = 27;
-            button3.Text = "Return";
-            button3.UseVisualStyleBackColor = true;
+            button1.Size = new Size(120, 35);
+            button1.TabIndex = 25;
+            button1.Text = "Return";
+            button1.Click += button1_Click;
             // 
             // AdminAccountManagement
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(686, 450);
-            Controls.Add(button8);
-            Controls.Add(button7);
-            Controls.Add(button6);
-            Controls.Add(button2);
+            ClientSize = new Size(686, 507);
             Controls.Add(button1);
-            Controls.Add(dataGridView1);
-            Controls.Add(button3);
+            Controls.Add(btnDelete);
+            Controls.Add(btnAdd);
+            Controls.Add(txtEmail);
+            Controls.Add(cmbRole);
+            Controls.Add(txtFullname);
+            Controls.Add(txtPassword);
+            Controls.Add(txtUsername);
+            Controls.Add(lblEmail);
+            Controls.Add(lblRole);
+            Controls.Add(lblFullname);
+            Controls.Add(lblPassword);
+            Controls.Add(lblUsername);
+            Controls.Add(dgvUsers);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "AdminAccountManagement";
             Text = "Admin - Account Management";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Load += AdminAccountManagement_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvUsers).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private Button button8;
-        private Button button7;
-        private Button button6;
-        private Button button2;
+        private Button btnDelete;
+        private Button btnAdd;
+        private TextBox txtEmail;
+        private ComboBox cmbRole;
+        private TextBox txtFullname;
+        private TextBox txtPassword;
+        private TextBox txtUsername;
+        private Label lblEmail;
+        private Label lblRole;
+        private Label lblFullname;
+        private Label lblPassword;
+        private Label lblUsername;
+        private DataGridView dgvUsers;
         private Button button1;
-        private DataGridView dataGridView1;
-        private Button button3;
     }
 }

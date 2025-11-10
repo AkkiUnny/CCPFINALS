@@ -1,6 +1,6 @@
 ﻿namespace CCPFINALS
 {
-    partial class Form3
+    partial class StudentExamChoice
     {
         /// <summary>
         /// Required designer variable.
@@ -28,97 +28,95 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentExamChoice));
+            button4 = new Button();
             button3 = new Button();
-            label3 = new Label();
-            label2 = new Label();
             button2 = new Button();
             button1 = new Button();
+            button5 = new Button();
             label1 = new Label();
             SuspendLayout();
             // 
+            // button4
+            // 
+            button4.Location = new Point(94, 202);
+            button4.Name = "button4";
+            button4.Size = new Size(175, 34);
+            button4.TabIndex = 10;
+            button4.Text = "Science";
+            button4.UseVisualStyleBackColor = true;
+            // 
             // button3
             // 
-            button3.Location = new Point(12, 279);
+            button3.Location = new Point(12, 338);
             button3.Name = "button3";
             button3.Size = new Size(94, 34);
-            button3.TabIndex = 11;
-            button3.Text = "Log Out";
+            button3.TabIndex = 9;
+            button3.Text = "Return";
             button3.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(165, 69);
-            label3.Name = "label3";
-            label3.Size = new Size(95, 20);
-            label3.TabIndex = 10;
-            label3.Text = "[Name Here]";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(85, 69);
-            label2.Name = "label2";
-            label2.Size = new Size(74, 20);
-            label2.TabIndex = 9;
-            label2.Text = "Welcome,";
             // 
             // button2
             // 
-            button2.Location = new Point(67, 182);
+            button2.Location = new Point(94, 152);
             button2.Name = "button2";
-            button2.Size = new Size(207, 34);
+            button2.Size = new Size(175, 34);
             button2.TabIndex = 8;
-            button2.Text = "View Performance Summary";
+            button2.Text = "Mathematics";
             button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            button1.Location = new Point(85, 125);
+            button1.Location = new Point(94, 104);
             button1.Name = "button1";
             button1.Size = new Size(175, 34);
             button1.TabIndex = 7;
-            button1.Text = "View Student Scores";
+            button1.Text = "English";
             button1.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(94, 252);
+            button5.Name = "button5";
+            button5.Size = new Size(175, 34);
+            button5.TabIndex = 11;
+            button5.Text = "History";
+            button5.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(16, 23);
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(59, 39);
             label1.Name = "label1";
-            label1.Size = new Size(315, 46);
-            label1.TabIndex = 6;
-            label1.Text = "Faculty Dashboard";
+            label1.Size = new Size(251, 41);
+            label1.TabIndex = 12;
+            label1.Text = "Taking an Exam?";
             // 
-            // Form3
+            // StudentExamChoice
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(351, 325);
+            ClientSize = new Size(368, 384);
+            Controls.Add(label1);
+            Controls.Add(button5);
+            Controls.Add(button4);
             Controls.Add(button3);
-            Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(label1);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            MaximumSize = new Size(369, 372);
-            MinimumSize = new Size(369, 372);
-            Name = "Form3";
-            Text = "Rhodes Canvas - Welcome!";
+            Name = "StudentExamChoice";
+            Text = "Rhodes Canvas - Exam Choice";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
+        private Button button4;
         private Button button3;
-        private Label label3;
-        private Label label2;
         private Button button2;
         private Button button1;
+        private Button button5;
         private Label label1;
     }
 }

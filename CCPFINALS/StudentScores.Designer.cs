@@ -1,6 +1,6 @@
 ﻿namespace CCPFINALS
 {
-    partial class _2StudentScores
+    partial class StudentScores
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_2StudentScores));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentScores));
             button3 = new Button();
             comboBox1 = new ComboBox();
             label2 = new Label();
@@ -101,7 +101,7 @@
             label5.TabIndex = 13;
             label5.Text = "[Encouragement Text]";
             // 
-            // _2StudentScores
+            // StudentScores
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -114,7 +114,7 @@
             Controls.Add(comboBox1);
             Controls.Add(button3);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "_2StudentScores";
+            Name = "StudentScores";
             Text = "Rhodes Canvas - Scores";
             ResumeLayout(false);
             PerformLayout();

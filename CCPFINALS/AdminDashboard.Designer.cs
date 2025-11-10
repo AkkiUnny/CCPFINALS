@@ -32,11 +32,11 @@
             button3 = new Button();
             label3 = new Label();
             label2 = new Label();
-            button2 = new Button();
-            button1 = new Button();
+            PerformanceSummary = new Button();
+            StudentScores = new Button();
             label1 = new Label();
-            button4 = new Button();
-            button5 = new Button();
+            AccountManagement = new Button();
+            QuestionBank = new Button();
             SuspendLayout();
             // 
             // button3
@@ -47,6 +47,7 @@
             button3.TabIndex = 17;
             button3.Text = "Log Out";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // label3
             // 
@@ -66,23 +67,25 @@
             label2.TabIndex = 15;
             label2.Text = "Welcome,";
             // 
-            // button2
+            // PerformanceSummary
             // 
-            button2.Location = new Point(285, 283);
-            button2.Name = "button2";
-            button2.Size = new Size(207, 34);
-            button2.TabIndex = 14;
-            button2.Text = "View Performance Summary";
-            button2.UseVisualStyleBackColor = true;
+            PerformanceSummary.Location = new Point(285, 283);
+            PerformanceSummary.Name = "PerformanceSummary";
+            PerformanceSummary.Size = new Size(207, 34);
+            PerformanceSummary.TabIndex = 14;
+            PerformanceSummary.Text = "View Performance Summary";
+            PerformanceSummary.UseVisualStyleBackColor = true;
+            PerformanceSummary.Click += PerformanceSummary_Click;
             // 
-            // button1
+            // StudentScores
             // 
-            button1.Location = new Point(285, 193);
-            button1.Name = "button1";
-            button1.Size = new Size(207, 34);
-            button1.TabIndex = 13;
-            button1.Text = "View Student Scores";
-            button1.UseVisualStyleBackColor = true;
+            StudentScores.Location = new Point(285, 193);
+            StudentScores.Name = "StudentScores";
+            StudentScores.Size = new Size(207, 34);
+            StudentScores.TabIndex = 13;
+            StudentScores.Text = "View Student Scores";
+            StudentScores.UseVisualStyleBackColor = true;
+            StudentScores.Click += StudentScores_Click;
             // 
             // label1
             // 
@@ -94,36 +97,38 @@
             label1.TabIndex = 12;
             label1.Text = "Admin Dashboard";
             // 
-            // button4
+            // AccountManagement
             // 
-            button4.Location = new Point(36, 193);
-            button4.Name = "button4";
-            button4.Size = new Size(207, 34);
-            button4.TabIndex = 18;
-            button4.Text = "Account Management";
-            button4.UseVisualStyleBackColor = true;
+            AccountManagement.Location = new Point(36, 193);
+            AccountManagement.Name = "AccountManagement";
+            AccountManagement.Size = new Size(207, 34);
+            AccountManagement.TabIndex = 18;
+            AccountManagement.Text = "Account Management";
+            AccountManagement.UseVisualStyleBackColor = true;
+            AccountManagement.Click += AccountManagement_Click;
             // 
-            // button5
+            // QuestionBank
             // 
-            button5.Location = new Point(36, 283);
-            button5.Name = "button5";
-            button5.Size = new Size(207, 34);
-            button5.TabIndex = 19;
-            button5.Text = "Question Bank Editor";
-            button5.UseVisualStyleBackColor = true;
+            QuestionBank.Location = new Point(36, 283);
+            QuestionBank.Name = "QuestionBank";
+            QuestionBank.Size = new Size(207, 34);
+            QuestionBank.TabIndex = 19;
+            QuestionBank.Text = "Question Bank Editor";
+            QuestionBank.UseVisualStyleBackColor = true;
+            QuestionBank.Click += QuestionBank_Click;
             // 
             // AdminDashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(540, 450);
-            Controls.Add(button5);
-            Controls.Add(button4);
+            Controls.Add(QuestionBank);
+            Controls.Add(AccountManagement);
             Controls.Add(button3);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(PerformanceSummary);
+            Controls.Add(StudentScores);
             Controls.Add(label1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "AdminDashboard";
@@ -137,10 +142,10 @@
         private Button button3;
         private Label label3;
         private Label label2;
-        private Button button2;
-        private Button button1;
+        private Button PerformanceSummary;
+        private Button StudentScores;
         private Label label1;
-        private Button button4;
-        private Button button5;
+        private Button AccountManagement;
+        private Button QuestionBank;
     }
 }

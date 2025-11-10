@@ -76,7 +76,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(239, 27);
             textBox2.TabIndex = 11;
-            textBox2.Text = "ID Number";
+            textBox2.Text = "Email";
             textBox2.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox1
@@ -86,7 +86,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(239, 27);
             textBox1.TabIndex = 10;
-            textBox1.Text = "Name";
+            textBox1.Text = "Username";
             textBox1.TextAlign = HorizontalAlignment.Center;
             // 
             // button2

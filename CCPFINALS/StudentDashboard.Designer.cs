@@ -1,6 +1,6 @@
 ﻿namespace CCPFINALS
 {
-    partial class Form2
+    partial class StudentDashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentDashboard));
             label1 = new Label();
             button1 = new Button();
             button2 = new Button();
@@ -102,7 +102,7 @@
             button4.Text = "Performance Summary";
             button4.UseVisualStyleBackColor = true;
             // 
-            // Form2
+            // StudentDashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -117,7 +117,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximumSize = new Size(369, 372);
             MinimumSize = new Size(369, 372);
-            Name = "Form2";
+            Name = "StudentDashboard";
             Text = "Rhodes Canvas - Welcome!";
             ResumeLayout(false);
             PerformLayout();

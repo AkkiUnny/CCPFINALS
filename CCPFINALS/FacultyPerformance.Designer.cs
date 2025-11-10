@@ -1,6 +1,6 @@
 ﻿namespace CCPFINALS
 {
-    partial class _3FacultyPerformance
+    partial class FacultyPerformance
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_3FacultyPerformance));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FacultyPerformance));
             SuspendLayout();
             // 
-            // _3FacultyPerformance
+            // FacultyPerformance
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "_3FacultyPerformance";
+            Name = "FacultyPerformance";
             Text = "Faculty - Student Performance";
             ResumeLayout(false);
         }

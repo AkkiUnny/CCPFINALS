@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CCPFINALS
 {
-    public partial class _2StudentExamMath : Form
+    public partial class FacultyDashboard : Form
     {
-        public _2StudentExamMath()
+        public FacultyDashboard()
         {
             InitializeComponent();
         }

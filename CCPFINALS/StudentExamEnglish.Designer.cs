@@ -1,6 +1,6 @@
 ﻿namespace CCPFINALS
 {
-    partial class _2StudentExamMath
+    partial class StudentExamEnglish
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_2StudentExamMath));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentExamEnglish));
             groupBox1 = new GroupBox();
             radioButton4 = new RadioButton();
             radioButton3 = new RadioButton();
@@ -100,7 +100,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(101, 20);
+            label2.Location = new Point(51, 20);
             label2.Name = "label2";
             label2.Size = new Size(89, 23);
             label2.TabIndex = 4;
@@ -112,11 +112,11 @@
             label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.Location = new Point(12, 20);
             label1.Name = "label1";
-            label1.Size = new Size(83, 23);
+            label1.Size = new Size(33, 23);
             label1.TabIndex = 3;
-            label1.Text = "[Number]";
+            label1.Text = "[N]";
             // 
-            // _2StudentExamMath
+            // StudentExamEnglish
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -127,8 +127,8 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximumSize = new Size(506, 314);
             MinimumSize = new Size(506, 314);
-            Name = "_2StudentExamMath";
-            Text = "Rhodes Canvas - Exam - Mathematics";
+            Name = "StudentExamEnglish";
+            Text = "Rhodes Canvas - Exam - English";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);

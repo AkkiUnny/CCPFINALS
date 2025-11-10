@@ -1,6 +1,6 @@
 ﻿namespace CCPFINALS
 {
-    partial class _2StudentExamEnglish
+    partial class StudentExamScience
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_2StudentExamEnglish));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentExamScience));
+            label1 = new Label();
+            label2 = new Label();
             groupBox1 = new GroupBox();
             radioButton4 = new RadioButton();
             radioButton3 = new RadioButton();
             radioButton2 = new RadioButton();
             radioButton1 = new RadioButton();
-            label2 = new Label();
-            label1 = new Label();
             groupBox1.SuspendLayout();
             SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(12, 21);
+            label1.Name = "label1";
+            label1.Size = new Size(33, 23);
+            label1.TabIndex = 0;
+            label1.Text = "[N]";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(51, 21);
+            label2.Name = "label2";
+            label2.Size = new Size(89, 23);
+            label2.TabIndex = 1;
+            label2.Text = "[Question]";
             // 
             // groupBox1
             // 
@@ -45,10 +65,10 @@
             groupBox1.Controls.Add(radioButton3);
             groupBox1.Controls.Add(radioButton2);
             groupBox1.Controls.Add(radioButton1);
-            groupBox1.Location = new Point(12, 60);
+            groupBox1.Location = new Point(12, 61);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(464, 187);
-            groupBox1.TabIndex = 5;
+            groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
             groupBox1.Text = "Answers:";
             // 
@@ -96,27 +116,7 @@
             radioButton1.Text = "A";
             radioButton1.UseVisualStyleBackColor = true;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(101, 20);
-            label2.Name = "label2";
-            label2.Size = new Size(89, 23);
-            label2.TabIndex = 4;
-            label2.Text = "[Question]";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(12, 20);
-            label1.Name = "label1";
-            label1.Size = new Size(83, 23);
-            label1.TabIndex = 3;
-            label1.Text = "[Number]";
-            // 
-            // _2StudentExamEnglish
+            // StudentExamScience
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -127,8 +127,8 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximumSize = new Size(506, 314);
             MinimumSize = new Size(506, 314);
-            Name = "_2StudentExamEnglish";
-            Text = "Rhodes Canvas - Exam - English";
+            Name = "StudentExamScience";
+            Text = "Rhodes Canvas - Exam - Science";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
@@ -137,12 +137,12 @@
 
         #endregion
 
+        private Label label1;
+        private Label label2;
         private GroupBox groupBox1;
+        private RadioButton radioButton1;
         private RadioButton radioButton4;
         private RadioButton radioButton3;
         private RadioButton radioButton2;
-        private RadioButton radioButton1;
-        private Label label2;
-        private Label label1;
     }
 }

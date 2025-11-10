@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CCPFINALS
 {
-    public partial class _3FacultyPerformance : Form
+    public partial class StudentScores : Form
     {
-        public _3FacultyPerformance()
+        public StudentScores()
         {
             InitializeComponent();
         }

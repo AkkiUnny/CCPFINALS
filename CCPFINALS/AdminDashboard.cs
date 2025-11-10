@@ -16,5 +16,38 @@ namespace CCPFINALS
         {
             InitializeComponent();
         }
+
+        private void StudentScores_Click(object sender, EventArgs e)
+        {
+            FacultyScores studentScoresForm = new FacultyScores();
+            studentScoresForm.Show();
+            this.Hide();
+        }
+
+        private void PerformanceSummary_Click(object sender, EventArgs e)
+        {
+            FacultyPerformance studentPerformanceForm = new FacultyPerformance();
+            studentPerformanceForm.Show();
+            this.Hide();
+        }
+
+        private void AccountManagement_Click(object sender, EventArgs e)
+        {
+            AdminAccountManagement accountManagementForm = new AdminAccountManagement();
+            accountManagementForm.Show();
+            this.Hide();
+        }
+
+        private void QuestionBank_Click(object sender, EventArgs e)
+        {
+            AdminQuestionBank questionBankForm = new AdminQuestionBank();
+            questionBankForm.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
